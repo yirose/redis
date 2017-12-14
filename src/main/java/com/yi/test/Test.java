@@ -22,13 +22,13 @@ public class Test extends AbstractJUnit4SpringContextTests {
 	public void test() {
 
 		logger.info("=========start===========");
-		/*
-		 * String的操作 c.insertString("java:string:english",
-		 * "java_insert_string");
-		 * logger.info("查询redis中的值:{}",c.select("java:string:english"));
-		 * c.insertString("java:string:cn", "redis学习");
-		 * logger.info("查询redis中的值:{}",c.select("java:string:cn"));
-		 */
+		
+		 // String的操作 
+		  c.insertString("java:string:english", "java_insert_string");
+		  logger.info("查询redis中的值:{}",c.select("java:string:english"));
+		  c.insertString("java:string:cn", "redis学习");
+		  logger.info("查询redis中的值:{}",c.select("java:string:cn"));
+		 
 
 		/*
 		 * 列表操作 List<Object> list = new ArrayList<Object>();
